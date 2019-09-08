@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>We'll be back soon</title>
+  <link rel="stylesheet" href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" />
+	<style>
+		#breathing {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      -webkit-animation: breathing 8s ease-out infinite normal;
+      animation: breathing 8s ease-out infinite normal;
+      background: #5885cb;
+    }
+    @-webkit-keyframes breathing {
+      0% {
+        -webkit-transform: scale(0.9);
+        -ms-transform: scale(0.9);
+        transform: scale(0.9);
+      }
+      50% {
+        -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+        transform: scale(1.2);
+      }
+      100% {
+        -webkit-transform: scale(0.9);
+        -ms-transform: scale(0.9);
+        transform: scale(0.9);
+      }
+    }
+    @keyframes breathing {
+      0% {
+        -webkit-transform: scale(0.9);
+        -ms-transform: scale(0.9);
+        transform: scale(0.9);
+      }
+      50% {
+        -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+        transform: scale(1.2);
+      }
+      100% {
+        -webkit-transform: scale(0.9);
+        -ms-transform: scale(0.9);
+        transform: scale(0.9);
+      }
+    }
+	</style>
+</head>
+<body>
+  <div class="px-5 max-w-xs md:px-0 mx-auto text-center mt-32">
+	  <h1>We're down for maintenance.</h1>
+	  <p>Be right back. Till then, breathe.</p>
+	  <div id="breathing" class="mt-10 block mx-auto"></div>
+  </div>
+</body>
+</html>
